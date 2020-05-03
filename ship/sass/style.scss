@@ -97,10 +97,10 @@ body {
     border: solid 1px #123f67;
 
     top: -25px;
-    right: 0px;
+    left: 10px;
 
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
 
     z-index: 20;
   }
@@ -113,10 +113,10 @@ body {
     border: solid 1px #123f67;
 
     top: -25px;
-    right: 30px;
+    left: 40px;
 
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
 
     z-index: 20;
   }
@@ -129,15 +129,42 @@ body {
     border: solid 1px #123f67;
 
     top: -25px;
-    right: 60px;
+    left: 70px;
 
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
 
     z-index: 20;
   }
 
-  .mast {
+  .frontmast {
+    position: absolute;
+    background: #c7cfd2;
+    border-top: solid 2px #aeb9bb;
+    transform: rotate(60deg);
+    top: -70px;
+    right: -45px;
+
+    width: 5px;
+    height: 50px;
+
+    &:before,
+    &:after {
+      @include border-radius(5px);
+      content: " ";
+      position: absolute;
+      background: #84939b;
+    }
+
+    &:before {
+    }
+
+    &:after {
+
+    }
+  }
+
+  .middlemast {
     position: absolute;
     background: #c7cfd2;
     border-top: solid 2px #aeb9bb;
@@ -161,19 +188,74 @@ body {
       left: -7px;
       background: #D2691E;
 
-
       width: 20px;
       height: 20px;
     }
 
     &:after {
-      top: -29px;
-      left: 4px;
+      top: -25px;
+      left: 0px;
 
-      width: 6px;
-      height: 20px;
+      width: 5px;
+      height: 30px;
     }
   }
+
+  .sail1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    top: -214px;
+    left: 150px;
+
+    z-index: 1;
+
+    width: 120px;
+    height: 145px;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    display: block;
+    content: '';
+    background: #FAEBD7;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(135deg);
+    width: 200%;
+    height: 200%;
+  }
+}
+
+.sail2 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  top: -213px;
+  left: 110px;
+
+  z-index: 1;
+
+  width: 120px;
+  height: 170px;
+
+&:before {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: block;
+  content: '';
+  background: #FAEBD7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  width: 200%;
+  height: 200%;
+  }
+}
 
   .cargo {
     @include border-radius(3px);
@@ -205,6 +287,46 @@ body {
     z-index: 0;
   }
 }
+
+
+  .back {
+    @include border-radius(5px);
+    position: absolute;
+    background: #CD853F;
+    border-top: solid 2px #aeb9bb;
+
+    top: -80px;
+    left: -20px;
+
+    width: 50px;
+    height: 50px;
+
+    &:before,
+    &:after {
+      @include border-radius(5px);
+      content: " ";
+      position: absolute;
+      background: #84939b;
+    }
+
+    &:before {
+      top: -10px;
+      left: -7px;
+      background: #D2691E;
+
+
+      width: 50px;
+      height: 60px;
+    }
+
+    &:after {
+      top: -5px;
+      left: 0px;
+
+      width: 6px;
+      height: 6px;
+    }
+  }
 
 #water {
   @include animate(water-animation 3s linear infinite);

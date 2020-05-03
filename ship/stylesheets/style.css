@@ -81,9 +81,9 @@ body {
   background: #ffffff;
   border: solid 1px #123f67;
   top: -25px;
-  right: 0px;
-  width: 8px;
-  height: 8px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
   z-index: 20;
 }
 /* line 108, ../sass/style.scss */
@@ -95,9 +95,9 @@ body {
   background: #ffffff;
   border: solid 1px #123f67;
   top: -25px;
-  right: 30px;
-  width: 8px;
-  height: 8px;
+  left: 40px;
+  width: 15px;
+  height: 15px;
   z-index: 20;
 }
 /* line 124, ../sass/style.scss */
@@ -109,13 +109,33 @@ body {
   background: #ffffff;
   border: solid 1px #123f67;
   top: -25px;
-  right: 60px;
-  width: 8px;
-  height: 8px;
+  left: 70px;
+  width: 15px;
+  height: 15px;
   z-index: 20;
 }
 /* line 140, ../sass/style.scss */
-#boat .mast {
+#boat .frontmast {
+  position: absolute;
+  background: #c7cfd2;
+  border-top: solid 2px #aeb9bb;
+  transform: rotate(60deg);
+  top: -70px;
+  right: -45px;
+  width: 5px;
+  height: 50px;
+}
+/* line 151, ../sass/style.scss */
+#boat .frontmast:before, #boat .frontmast:after {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  content: " ";
+  position: absolute;
+  background: #84939b;
+}
+/* line 167, ../sass/style.scss */
+#boat .middlemast {
   position: absolute;
   background: #c7cfd2;
   border-top: solid 2px #aeb9bb;
@@ -124,8 +144,8 @@ body {
   width: 5px;
   height: 170px;
 }
-/* line 151, ../sass/style.scss */
-#boat .mast:before, #boat .mast:after {
+/* line 178, ../sass/style.scss */
+#boat .middlemast:before, #boat .middlemast:after {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -133,22 +153,72 @@ body {
   position: absolute;
   background: #84939b;
 }
-/* line 159, ../sass/style.scss */
-#boat .mast:before {
+/* line 186, ../sass/style.scss */
+#boat .middlemast:before {
   top: 10px;
   left: -7px;
   background: #D2691E;
   width: 20px;
   height: 20px;
 }
-/* line 169, ../sass/style.scss */
-#boat .mast:after {
-  top: -29px;
-  left: 4px;
-  width: 6px;
-  height: 20px;
+/* line 195, ../sass/style.scss */
+#boat .middlemast:after {
+  top: -25px;
+  left: 0px;
+  width: 5px;
+  height: 30px;
 }
-/* line 178, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
+#boat .sail1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  top: -214px;
+  left: 150px;
+  z-index: 1;
+  width: 120px;
+  height: 145px;
+}
+/* line 217, ../sass/style.scss */
+#boat .sail1:before {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: block;
+  content: '';
+  background: #FAEBD7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  width: 200%;
+  height: 200%;
+}
+/* line 232, ../sass/style.scss */
+#boat .sail2 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  top: -213px;
+  left: 110px;
+  z-index: 1;
+  width: 120px;
+  height: 170px;
+}
+/* line 245, ../sass/style.scss */
+#boat .sail2:before {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: block;
+  content: '';
+  background: #FAEBD7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  width: 200%;
+  height: 200%;
+}
+/* line 260, ../sass/style.scss */
 #boat .cargo {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -165,7 +235,45 @@ body {
   z-index: 0;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
+.back {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background: #CD853F;
+  border-top: solid 2px #aeb9bb;
+  top: -80px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+}
+/* line 304, ../sass/style.scss */
+.back:before, .back:after {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  content: " ";
+  position: absolute;
+  background: #84939b;
+}
+/* line 312, ../sass/style.scss */
+.back:before {
+  top: -10px;
+  left: -7px;
+  background: #D2691E;
+  width: 50px;
+  height: 60px;
+}
+/* line 322, ../sass/style.scss */
+.back:after {
+  top: -5px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+}
+
+/* line 331, ../sass/style.scss */
 #water {
   -webkit-animation: water-animation 3s linear infinite;
   -moz-animation: water-animation 3s linear infinite;
@@ -181,7 +289,7 @@ body {
   overflow: hidden;
   z-index: 50;
 }
-/* line 225, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 #water > span {
   position: relative;
   display: inline-block;
@@ -190,7 +298,7 @@ body {
   width: 60px;
   z-index: 0;
 }
-/* line 235, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 #water > span:before {
   -moz-border-radius-topleft: 110px 90px;
   -webkit-border-top-left-radius: 110px 90px;
@@ -208,7 +316,7 @@ body {
   margin-top: 40px;
   z-index: 1;
 }
-/* line 254, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 #water > span:after {
   content: " ";
   position: absolute;
