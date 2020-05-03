@@ -169,35 +169,35 @@ body {
     background: #c7cfd2;
     border-top: solid 2px #aeb9bb;
 
-    top: -200px;
+    top: -185px;
     left: 200px;
 
     width: 5px;
-    height: 170px;
+    height: 160px;
 
     &:before,
     &:after {
-      @include border-radius(5px);
+      @include border-radius(0 0 7px 7px);
       content: " ";
       position: absolute;
       background: #84939b;
     }
 
     &:before {
-      top: 10px;
+      top: 15px;
       left: -7px;
       background: #D2691E;
 
       width: 20px;
-      height: 20px;
+      height: 7.5px;
     }
 
     &:after {
-      top: -25px;
+      top: 0px;
       left: 0px;
 
       width: 5px;
-      height: 30px;
+      height: 10px;
     }
   }
 
@@ -206,21 +206,18 @@ body {
     display: inline-block;
     overflow: hidden;
 
-    top: -214px;
-    left: 150px;
-
-    z-index: 1;
+    top: -240px;
+    left: 10px;
 
     width: 120px;
-    height: 145px;
+    height: 100px;
 
   &:before {
     content: " ";
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: -125%;
     display: block;
-    content: '';
     background: #FAEBD7;
     -webkit-transform: rotate(90deg);
     transform: rotate(135deg);
@@ -234,21 +231,18 @@ body {
   display: inline-block;
   overflow: hidden;
 
-  top: -213px;
-  left: 110px;
-
-  z-index: 1;
+  top: -218px;
+  left: -45px;
 
   width: 120px;
-  height: 170px;
+  height: 117px;
 
 &:before {
   content: " ";
   position: absolute;
   top: 20%;
-  right: 20%;
+  right: -120%;
   display: block;
-  content: '';
   background: #FAEBD7;
   -webkit-transform: rotate(90deg);
   transform: rotate(135deg);
@@ -256,6 +250,59 @@ body {
   height: 200%;
   }
 }
+
+.sail3 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  top: -218px;
+  left: -33px;
+
+  width: 120px;
+  height: 175px;
+
+&:before {
+  content: " ";
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  display: block;
+  background: #FAEBD7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  width: 200%;
+  height: 200%;
+  }
+}
+.sail4 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  top: -358px;
+  left: 150px;
+
+  width: 120px;
+  height: 140px;
+
+&:before {
+  content: " ";
+  position: absolute;
+  top: 22%;
+  right: 22%;
+  display: block;
+  background: #FAEBD7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(135deg);
+  width: 200%;
+  height: 200%;
+  }
+}
+
+
+
+
 
   .cargo {
     @include border-radius(3px);
