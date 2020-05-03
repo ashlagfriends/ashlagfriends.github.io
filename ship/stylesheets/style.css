@@ -1,0 +1,312 @@
+/* line 3, ../sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 24, ../sass/style.scss */
+body {
+  background: #f2f6f7;
+  text-align: center;
+  padding: 50px;
+}
+
+/* line 30, ../sass/style.scss */
+#scene {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  width: 640px;
+  height: 320px;
+  overflow: hidden;
+}
+
+/* line 44, ../sass/style.scss */
+#boat {
+  -moz-animation: boat-animation 3s ease-in-out infinite alternate;
+  -webkit-animation: boat-animation 3s ease-in-out infinite alternate;
+  animation: boat-animation 3s ease-in-out infinite alternate;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 72px;
+  width: 404px;
+  height: 25px;
+  border-style: solid;
+  border-color: #8B4513 transparent transparent;
+  border-width: 25px 21px 0 21px;
+  margin: auto;
+}
+/* line 61, ../sass/style.scss */
+#boat:before, #boat:after {
+  content: " ";
+  position: absolute;
+  z-index: 10;
+}
+/* line 68, ../sass/style.scss */
+#boat:before {
+  top: -34px;
+  left: -21px;
+  width: 404px;
+  height: 11px;
+  border-style: solid;
+  border-color: #D2691E transparent transparent;
+  border-width: 10px 8px 0 0;
+}
+/* line 80, ../sass/style.scss */
+#boat:after {
+  background: #CD853F;
+  top: -40px;
+  right: -29px;
+  bottom: -20px;
+  width: 412px;
+  height: 2.5px;
+}
+/* line 92, ../sass/style.scss */
+#boat .window1 {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #ffffff;
+  border: solid 1px #123f67;
+  top: -25px;
+  right: 0px;
+  width: 8px;
+  height: 8px;
+  z-index: 20;
+}
+/* line 108, ../sass/style.scss */
+#boat .window2 {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #ffffff;
+  border: solid 1px #123f67;
+  top: -25px;
+  right: 30px;
+  width: 8px;
+  height: 8px;
+  z-index: 20;
+}
+/* line 124, ../sass/style.scss */
+#boat .window3 {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #ffffff;
+  border: solid 1px #123f67;
+  top: -25px;
+  right: 60px;
+  width: 8px;
+  height: 8px;
+  z-index: 20;
+}
+/* line 140, ../sass/style.scss */
+#boat .mast {
+  position: absolute;
+  background: #c7cfd2;
+  border-top: solid 2px #aeb9bb;
+  top: -200px;
+  left: 200px;
+  width: 5px;
+  height: 170px;
+}
+/* line 151, ../sass/style.scss */
+#boat .mast:before, #boat .mast:after {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  content: " ";
+  position: absolute;
+  background: #84939b;
+}
+/* line 159, ../sass/style.scss */
+#boat .mast:before {
+  top: 10px;
+  left: -7px;
+  background: #D2691E;
+  width: 20px;
+  height: 20px;
+}
+/* line 169, ../sass/style.scss */
+#boat .mast:after {
+  top: -29px;
+  left: 4px;
+  width: 6px;
+  height: 20px;
+}
+/* line 178, ../sass/style.scss */
+#boat .cargo {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: -13px 0 0 0 #cb2332, -26px 0 0 0 #f02231, -39px 0 0 0 #f02231, -52px 0 0 0 #cb2332, -65px 0 0 0 #f02231, -26px -13px 0 0 #f02231, -39px -13px 0 0 #cb2332, -52px -13px 0 0 #f02231, -65px -13px 0 0 #f02231, -52px -26px 0 0 #f02231, -65px -26px 0 0 #cb2332;
+  -webkit-box-shadow: -13px 0 0 0 #cb2332, -26px 0 0 0 #f02231, -39px 0 0 0 #f02231, -52px 0 0 0 #cb2332, -65px 0 0 0 #f02231, -26px -13px 0 0 #f02231, -39px -13px 0 0 #cb2332, -52px -13px 0 0 #f02231, -65px -13px 0 0 #f02231, -52px -26px 0 0 #f02231, -65px -26px 0 0 #cb2332;
+  box-shadow: -13px 0 0 0 #cb2332, -26px 0 0 0 #f02231, -39px 0 0 0 #f02231, -52px 0 0 0 #cb2332, -65px 0 0 0 #f02231, -26px -13px 0 0 #f02231, -39px -13px 0 0 #cb2332, -52px -13px 0 0 #f02231, -65px -13px 0 0 #f02231, -52px -26px 0 0 #f02231, -65px -26px 0 0 #cb2332;
+  position: absolute;
+  background: #f02231;
+  top: -45px;
+  left: 95px;
+  width: 12px;
+  height: 12px;
+  z-index: 0;
+}
+
+/* line 209, ../sass/style.scss */
+#water {
+  -webkit-animation: water-animation 3s linear infinite;
+  -moz-animation: water-animation 3s linear infinite;
+  -o-animation: water-animation 3s linear infinite;
+  animation: water-animation 3s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 89px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 50;
+}
+/* line 225, ../sass/style.scss */
+#water > span {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 200px;
+  width: 60px;
+  z-index: 0;
+}
+/* line 235, ../sass/style.scss */
+#water > span:before {
+  -moz-border-radius-topleft: 110px 90px;
+  -webkit-border-top-left-radius: 110px 90px;
+  border-top-left-radius: 110px 90px;
+  -moz-border-radius-topright: 110px 90px;
+  -webkit-border-top-right-radius: 110px 90px;
+  border-top-right-radius: 110px 90px;
+  content: " ";
+  position: absolute;
+  background: #2495c0;
+  top: 0;
+  left: -20px;
+  height: 200px;
+  width: 100px;
+  margin-top: 40px;
+  z-index: 1;
+}
+/* line 254, ../sass/style.scss */
+#water > span:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #24a6d6;
+  border-width: 0 350px 100px 350px;
+  z-index: 0;
+}
+
+@-webkit-keyframes water-animation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -60px;
+  }
+}
+@-moz-keyframes water-animation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -60px;
+  }
+}
+@-o-keyframes water-animation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -60px;
+  }
+}
+@keyframes water-animation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -60px;
+  }
+}
+@-webkit-keyframes boat-animation {
+  0% {
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+}
+@-moz-keyframes boat-animation {
+  0% {
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+}
+@-o-keyframes boat-animation {
+  0% {
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+}
+@keyframes boat-animation {
+  0% {
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+}
