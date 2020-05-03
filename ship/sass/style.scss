@@ -45,9 +45,10 @@ body {
   @include animation(boat-animation 3s ease-in-out infinite alternate);
   position: absolute;
 
+
   left: 0;
   right: 0;
-  bottom: 72px;
+  bottom: 100px;
 
   width: 404px;
   height: 25px;
@@ -66,6 +67,7 @@ body {
   }
 
   &:before {
+
     top: -34px;
     left: -21px;
 
@@ -82,11 +84,38 @@ body {
 
     top: -40px;
     right: -29px;
-    bottom: -20px;
+    bottom: -50px;
 
     width: 412px;
     height: 2.5px;
+
   }
+
+.boatbotton{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    top: -394px;
+    left: -7px;
+
+    width: 376px;
+    height: 125px;
+    border-radius: 50% 50% 50% 50%;
+
+
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    display: block;
+    background: #8B4513;
+    width: 376px;
+    height: 100%;
+  }
+}
+
 
 
   .window1 {
@@ -96,7 +125,7 @@ body {
     background: #ffffff;
     border: solid 1px #123f67;
 
-    top: -25px;
+    top: -20px;
     left: 10px;
 
     width: 15px;
@@ -112,8 +141,8 @@ body {
     background: #ffffff;
     border: solid 1px #123f67;
 
-    top: -25px;
-    left: 40px;
+    top: -20px;
+    left: 50px;
 
     width: 15px;
     height: 15px;
@@ -128,8 +157,8 @@ body {
     background: #ffffff;
     border: solid 1px #123f67;
 
-    top: -25px;
-    left: 70px;
+    top: -20px;
+    left: 90px;
 
     width: 15px;
     height: 15px;
@@ -257,7 +286,7 @@ body {
   overflow: hidden;
 
   top: -218px;
-  left: -32px;
+  left: -33px;
 
   width: 120px;
   height: 175px;
