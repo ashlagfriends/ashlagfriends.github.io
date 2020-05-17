@@ -10,3 +10,4 @@
 .center-small-img{display: block; margin-left: auto; margin-right: auto; width: 50%;}
 .imgbox {display: grid;height: 100%;}
 .center-fit {width: 100%;height: 100vh;margin: auto;}
+.audio {width: 100%;}
