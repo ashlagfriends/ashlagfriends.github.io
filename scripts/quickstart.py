@@ -148,7 +148,7 @@ def marginFiles(list1):
 
 def addHebDate(list1):
     print('Get hebrew date.')
-    hebday = [u'יום ראשון',u'יום שבת',u'יום שישי',u'יום חמישי',u'יום רביעי',u'יום שלישי',u'יום שני']
+    hebday = [u'יום שני',u'יום שלישי',u'יום רביעי',u'יום חמישי',u'יום שישי',u'יום שבת',u'יום ראשון']
     #get hebrew date
     for item1 in list1:
         year = item1['date'][0:4]
@@ -246,7 +246,6 @@ def createPosts(list1):
             htmlinfo+= '</audio>\n<br>\n'
         post.write(htmlinfo)
         post.close()
-        
 
 
 
