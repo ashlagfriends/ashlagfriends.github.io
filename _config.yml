@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/"
+baseurl: ""
 url: "http://ashlagfriends.com/"
 
 # THEME-SPECIFIC CONFIGURATION
