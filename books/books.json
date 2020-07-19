@@ -1,0 +1,14 @@
+{
+     "bookname": "יעקב",
+     "lastName": "ישראלי",
+     "address": {
+         "streetAddress": "רחוב המשעול, 13",
+         "city": "ירושלים",
+         "state": "ישראל",
+         "postalCode": 10021
+     },
+     "phoneNumbers": [
+         "212 555-1234",
+         "646 555-4567"
+     ]
+ }

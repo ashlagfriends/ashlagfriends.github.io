@@ -1,0 +1,47 @@
+---
+layout: post
+title: שיעור בוקר - פרשת נשא סעיף א
+subtitle: שיעור מפי כבוד קדושת האדמו"ר שליט"א
+date: 2020-05-24 04:30:08
+feature-img: '/assets/img/bg-post.jpg'
+tags: [שיעור בוקר, פרשת נשא]
+---
+
+
+<div class="imgbox">
+
+  <audio class="audiobar" controls="controls" style="width: 100%;">
+    <source src="https://docs.google.com/uc?export=download&id=1-RwM1MN6iIHVGycEKuxZ_20n2Itz-nrp">
+  </audio>
+
+<br>
+
+
+<object data="http://www.ashlagbaroch.org/Zohar/NasaEtRosh.pdf" type="application/pdf" class="center-fit">
+<a href="http://www.ashlagbaroch.org/Zohar/NasaEtRosh.pdf">NasaEtRosh.pdf</a>
+</object>
+</div>
+
+<input type="text" id="search-input" placeholder="הקלד מילות חיפוש..." class="search-bar" autofocus>
+<br>
+<br>
+<ul id="results-container"></ul>
+
+<section>
+    <!-- Script pointing to jekyll-search.js -->
+    <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: "/assets/data/booksearch.json"
+            console.log(json)
+            searchResultTemplate: '<div class="search-title"><a href="{url}"><h3> {title}</h3></a><div class="meta">{date} <div class="right"><i class="fa fa-tag"></i> {tags}</div></div><p>{excerpt}</p></div><hr> ',
+            noResultsText: '{{ site.data.language.str_no_result_found | default: "No result found" }}',
+            limit: 10,
+            fuzzy: false,
+            exclude: []
+        })
+    </script>
+</section>

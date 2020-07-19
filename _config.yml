@@ -1,24 +1,48 @@
-title:              ידידי אשלג
-email:              ashlagfriends@gmail.com
-description:         הקלטות ושיעורים מכבוד  קדושת האדמו"ר שליט"א
-author:             ידידי אשלג
-baseurl:            ""
-url:                "https://ashlagfriends.com"
+# SITE CONFIGURATION
+baseurl: "/"
+url: "http://ashlagfriends.com/"
 
-# Social Profiles
-twitter_username:   ashlagfriends
-github_username:    ashlagfriends
-facebook_username:  ashlagfriends
-linkedin_username:  ashlagfriends
+# THEME-SPECIFIC CONFIGURATION
+title: ידידי אשלג                                       # site's title
+description: 'שיעורים בזוהר'                            # used by search engines
+avatar: assets/img/pp.jpeg                              # Empty for no avatar in navbar
+favicon: assets/favicon.ico                             # Icon displayed in the tab
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+# Header and footer text
+header_text: ידידי אשלג  # Change Blog header text
+header_feature_image: assets/img/bg-index.jpg
+footer_text: >
+      הזכויות שמורות לידידי אשלג Ⓒ
 
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+# Blog
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/bg-post.jpg                   # A bit transparent for color posts.
+
+# Features
+katex: true                                             # Enable if using math markup
+google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
+cookie_consent: false                                   # To respect the usage of cookies
+disqus_shortname:                                       # Your discus shortname for comments
+layout_variables:                                       # Open the "_sass > base" folder, and open "_variables.scss"
+footer_icons:                                           # In _data/social.yml
+share_buttons:                                          # In _data/social.yml
+authors:                                                # In _data/authors.yml
+language:                                               # In _data/language.yml
+
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: [".jekyll-cache", ".idea", "vendor/*", "assets/node_modules"]
+
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
