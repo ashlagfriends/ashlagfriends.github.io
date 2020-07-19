@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "index.html"
+baseurl: "/"
 url: "https://ashlagfriends.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
