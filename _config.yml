@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "http://ashlagfriends.com/"
+url: "http://ashlagfriends.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: ידידי אשלג                                       # site's title
