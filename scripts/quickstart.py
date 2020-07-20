@@ -226,17 +226,20 @@ def createPosts(list1):
         post.write('date:' +s+ item1['date'] +s+ item1['time'][0:2] +':' + item1['time'][3:5] + ':' + item1['time'][6:8]+'\n')
         post.write('background: "/img/bg-post.jpg"'+'\n')
         post.write('tags: '+'[')
-        if 'hebday' in item1:
-            post.write(item1['hebday']+',')
-            post.write(item1['hebdate']+',')
+        if 'holiday' in item1:
+            post.write(item1['holiday']+',')
             post.write(item1['period']+',')
             post.write(item1['parasha']+',')
-            post.write(item1['date']+',')
         else:
-            post.write(item1['hebdate']+',')
             post.write(item1['period']+',')
             post.write(item1['parasha']+',')
-            post.write(item1['date']+',')
+        ## add tags of leasessn location
+        if item1['hebday'] == u'יום שני' and item1['period'] == u'שיעור ערב':
+            post.write(u'שיעורים ברעננה'+',')
+        elif item1['hebday'] == u'יום רביעי' and item1['period'] == u'שיעור ערב':
+            post.write(u'שיעורים בבני ברק'+',')
+        elif item1['hebday'] == u'יום שישי' and item1['time'] >= '09.00.00':
+            post.write(u'שיעורים בגבעת שמואל'+',')
         post.write(']\n---'+'\n')
 
         for id in item1['id']:
@@ -246,6 +249,7 @@ def createPosts(list1):
             htmlinfo+= '</audio>\n<br>\n'
         post.write(htmlinfo)
         post.close()
+        
 
 
 
