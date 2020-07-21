@@ -1,0 +1,131 @@
+
+$site-header: 60px;
+
+
+.site-header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    height: $site-header;
+    line-height: $site-header;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.5);
+    .contener{
+        margin: 0 auto;
+        padding: 0 20px 0 15px;
+        max-width: 1100px;
+    }
+    .site-title{
+        margin: 0;
+        line-height: $site-header;
+    }
+    .branding{
+        
+        .avatar{
+            height: 60px;
+            width: 60px;
+            margin: 0px;
+            padding: 5px;
+            border-radius: 50%;
+        }
+    }
+    nav a#pull i{
+        margin: 0;
+        line-height: $site-header;
+    }
+    nav ul{
+        line-height: $site-header;
+    }
+}
+
+// home
+.home{
+    .call-out{
+        h1{
+            font-size: 80px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        a{
+            display: inline-block;
+            h4{
+                padding: 10px 20px;
+                background:#835C3B;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+        }
+
+    }
+    
+}
+
+
+// post
+.posts{
+    .post-teaser{
+        border-bottom: 0;
+        .excerpt{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// about
+
+.team-member{
+    display: inline-block;
+    width: 400px;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    img{
+        width: 4em;
+        height: 4em;
+        padding: 0;
+    }
+    ul{
+        margin: 0 auto;
+        .row{
+            justify-content: center;
+        }
+    }
+}
+
+
+// tags
+
+.tag-title{
+    padding: 5px 0;
+    i{
+        padding: 0 10px 0 5px;
+    }
+    .meta{
+        line-height: 1.8;
+    }
+}
+
+// footer
+
+.site-footer{
+    background: #333;
+    padding: 40px 0;
+    .text{
+        margin: 0;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
