@@ -2,6 +2,7 @@
 $site-header: 60px;
 
 
+
 .site-header{
     z-index: 999;
     position: fixed;
@@ -118,6 +119,27 @@ $site-header: 60px;
     }
 }
 
+
+@media screen and (max-width: $break){
+
+    nav ul.hide{
+        display: none;
+    }
+
+
+    .home{
+        .call-out{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+
+    .team-member{
+        width: 70%;
+    }
+
+}
 
 
 
