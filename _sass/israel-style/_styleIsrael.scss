@@ -8,12 +8,19 @@ $site-header: 60px;
     position: fixed;
     top: 0;
     padding: 0;
-    height: $site-header;
-    line-height: $site-header;
+    // height: $site-header;
+    // line-height: $site-header;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease; /* other css rules here */
+
+    &.afterscroll{
+        top: -60px;
+    }
+
     .contener{
         margin: 0 auto;
         padding: 0 20px 0 15px;
+        line-height: 60px;
         max-width: 1100px;
     }
     .site-title{
@@ -36,8 +43,15 @@ $site-header: 60px;
     }
     nav ul{
         line-height: $site-header;
+        padding: 10px 0;
+
+        &.hide{
+            padding: 0;
+        }
     }
 }
+
+
 
 // home
 .home{
@@ -122,10 +136,12 @@ $site-header: 60px;
 
 @media screen and (max-width: $break){
 
-    nav ul.hide{
-        display: none;
+    .site-header nav ul{
+        line-height: 1.5;
+        &.hide{
+            line-height: 0;
+        }
     }
-
 
     .home{
         .call-out{

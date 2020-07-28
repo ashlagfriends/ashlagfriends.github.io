@@ -35,8 +35,8 @@ layout: page
     <div class="posts">
         {% for tag in tags %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
-            <a href="#{{ tag | cgi_escape }}"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
-            <a href="#{{ page.title }}" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
+            <a name="{{ tag | cgi_escape }}" id="{{ tag | cgi_escape }}" href="#{{ tag | cgi_escape }}"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
+            <a href="#top" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
 
         </h3>
 
