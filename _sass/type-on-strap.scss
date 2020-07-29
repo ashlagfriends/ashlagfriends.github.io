@@ -1,3 +1,8 @@
+
+// israel fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap');
+
+
 // Variables
 @import 'base/variables';
 // External
@@ -25,3 +30,6 @@
 @import 'includes/share_buttons';
 @import 'includes/blog_nav.scss';
 @import 'includes/cookie_consent.scss';
+
+// israel style
+@import 'israel-style/styleIsrael';
