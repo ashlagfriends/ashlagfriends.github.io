@@ -91,8 +91,8 @@ $site-header: 60px;
 
 .team-member{
     display: inline-block;
-    width: 400px;
-    margin: 40px;
+    width: clamp(220px , 70% , 350px);
+    margin: 20px;
     padding: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -151,9 +151,10 @@ $site-header: 60px;
         }
     }
 
-    .team-member{
-        width: 70%;
-    }
+    // .team-member{
+    //     // width: 70%;
+    //     // padding: 10px;
+    // }
 
 }
 
