@@ -1,10 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "/"
-<<<<<<< HEAD
 url: "https://ashlagfriends.com/"
-=======
-url: "https://ashlagfriends.gitthub.io/"
->>>>>>> israel_3.0
 
 # THEME-SPECIFIC CONFIGURATION
 title: ידידי אשלג                                       # site's title
