@@ -136,6 +136,7 @@ $site-header: 60px;
 
 @media screen and (max-width: $break){
 
+<<<<<<< HEAD
     .site-header nav ul{
         line-height: 1.5;
         &.hide{
@@ -143,6 +144,13 @@ $site-header: 60px;
         }
     }
 
+=======
+    nav ul.hide{
+        display: none;
+    }
+
+
+>>>>>>> 93752f519e5108b7bddd7cc4c604d5e91131e1d8
     .home{
         .call-out{
             h1{
@@ -151,10 +159,16 @@ $site-header: 60px;
         }
     }
 
+<<<<<<< HEAD
     // .team-member{
     //     // width: 70%;
     //     // padding: 10px;
     // }
+=======
+    .team-member{
+        width: 70%;
+    }
+>>>>>>> 93752f519e5108b7bddd7cc4c604d5e91131e1d8
 
 }
 
