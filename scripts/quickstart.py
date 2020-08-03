@@ -135,6 +135,7 @@ def marginFiles(list1):
 
                 newDict = {'date':previousItem['date'],'id':newIDs,'key':previousItem['key'],'time':previousItem['time']}
                 index = next((index for (index, d) in enumerate(list2) if d['key'] == newDict['key']), None)
+                print('index:',index)
                 list2[index] = newDict
                 previousItem = item1
                 newIDs = []
@@ -249,7 +250,7 @@ def createPosts(list1):
             htmlinfo+= '</audio>\n<br>\n'
         post.write(htmlinfo)
         post.close()
-        
+
 
 
 
